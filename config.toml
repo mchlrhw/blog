@@ -1,0 +1,15 @@
+baseURL = "https://mchlrhw.github.io/blog/"
+languageCode = "en-us"
+title = "mchlrhw"
+publishDir = "docs"
+
+[[menu.main]]
+  name = "Home"
+  weight = 1
+  identifier = "home"
+  url = "/"
+[[menu.main]]
+  name = "Posts"
+  weight = 2
+  identifier = "posts"
+  url = "/posts/"
