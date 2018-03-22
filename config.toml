@@ -14,3 +14,8 @@ publishDir = "docs"
   weight = 2
   identifier = "posts"
   url = "/posts/"
+[[menu.main]]
+  name = "Brewlog"
+  weight = 3
+  identifier = "brewlog"
+  url = "/brewlog/"

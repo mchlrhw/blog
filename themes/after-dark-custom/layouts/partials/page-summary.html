@@ -6,6 +6,9 @@
     {{ if eq .Type "post" }}
       <p class="muted">{{ partial "post/meta.html" . }}</p>
     {{ end }}
+    {{ if eq .Type "brewlog" }}
+      <p class="muted">{{ partial "brewlog/meta.html" . }}</p>
+    {{ end }}
   </header>
   {{ if .Description }}
     <blockquote itemprop="headline">{{ .Description }}</blockquote>
