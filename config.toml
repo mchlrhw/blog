@@ -1,7 +1,7 @@
 baseURL = "https://mchlrhw.github.io/blog/"
 languageCode = "en-us"
 title = "mchlrhw"
-theme = "after-dark"
+theme = "after-dark-custom"
 publishDir = "docs"
 
 [[menu.main]]
