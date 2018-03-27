@@ -7,6 +7,14 @@
 {{ define "main" }}
   <header>
     <h1>{{ .Title }}</h1>
+    {{ if .Params.subtitle }}
+    <h2>{{ .Params.subtitle }}</h2>
+    {{ end }}
+    {{ if eq .Type "brewlog" }}
+    <p><strong>Targets:</strong></p>
+    <p>{{ .Params.targets }}</p>
+    <hr />
+    {{ end }}
   </header>
   {{ .Content }}
 {{ end }}

@@ -1,17 +1,12 @@
 ---
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
+subtitle: "NAME - STYLE"
 date: {{ .Date }}
+publishdate: {{ .Date }}
 draft: true
 type: brewlog
 categories: ["grain to glass"]
----
-
-# NAME - STYLE
-
-**Targets**
-
-OG: XXXX FG: XXXX ABV: XX% IBU: XX EBC: XX VOL: 20l
-
+targets: "OG: XXXX FG: XXXX ABV: XX% IBU: XX EBC: XX VOL: 20l"
 ---
 
 Lorem ipsum dolor sit amet...
