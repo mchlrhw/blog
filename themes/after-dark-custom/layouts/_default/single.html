@@ -6,7 +6,7 @@
 {{ end }}
 {{ define "main" }}
   <header>
-    <h1>{{ .Title }}</h1>
+    <h1>{{ .Title }}{{ if eq .Type "brewlog" }} ({{ .Date.Format "2 Jan, 2006" }}){{ end }}</h1>
     {{ if .Params.subtitle }}
     <h2>{{ .Params.subtitle }}</h2>
     {{ end }}
