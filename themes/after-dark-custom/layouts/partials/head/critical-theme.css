@@ -59,11 +59,15 @@ blockquote cite::before {
 }
 .hack h2:after {
   content:"------------------------------------------------------------------------------";
-  position: absolute;
-  bottom: -14px;
-  left: 0
+  display: inline-block;
+  position: relative;
+  bottom: 0px;
+  left: 0;
+  height: 10px;
+  width: 100%;
+  overflow: hidden;
 }
-h2 a {
+.hack h2 a {
   border-bottom: 0px;
 }
 .hack li ul {
