@@ -63,7 +63,7 @@ blockquote cite::before {
   position: relative;
   bottom: 0px;
   left: 0;
-  height: 10px;
+  height: 12px;
   width: 100%;
   overflow: hidden;
 }

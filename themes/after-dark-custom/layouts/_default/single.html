@@ -5,8 +5,9 @@
   {{ partial "menu.html" . }}
 {{ end }}
 {{ define "main" }}
+  <article itemscope itemtype="http://schema.org/BlogPosting">
   <header>
-    <h1>{{ .Title }}{{ if eq .Type "brewlog" }} ({{ .Date.Format "2 Jan, 2006" }}){{ end }}</h1>
+    <h1 itemprop="headline">{{ .Title }}{{ if eq .Type "brewlog" }} ({{ .Date.Format "2 Jan, 2006" }}){{ end }}</h1>
     {{ if .Params.subtitle }}
     <h2>{{ .Params.subtitle }}</h2>
     {{ end }}
@@ -16,7 +17,14 @@
     <hr />
     {{ end }}
   </header>
-  {{ .Content }}
+  <div itemprop="articleBody">
+    {{ .Content }}
+  </div>
+  <footer>
+    <hr />
+    {{ partial "post/byline.html" . }}
+  </footer>
+  </article>
 {{ end }}
 {{ define "footer" }}
   {{ partial "powered-by.html" . }}
