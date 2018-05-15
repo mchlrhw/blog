@@ -3,6 +3,9 @@ languageCode = "en-us"
 title = "mchlrhw"
 theme = "after-dark-custom"
 publishDir = "docs"
+pygmentsUseClassic = true
+pygmentsCodefences = true
+pygmentsStyle = "monokai"
 
 [[menu.main]]
   name = "Home"
