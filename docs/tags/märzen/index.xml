@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Grain to Glass on mchlrhw</title>
-    <link>https://mchlrhw.github.io/blog/categories/grain-to-glass/</link>
-    <description>Recent content in Grain to Glass on mchlrhw</description>
+    <title>Märzen on mchlrhw</title>
+    <link>https://mchlrhw.github.io/blog/tags/m%C3%A4rzen/</link>
+    <description>Recent content in Märzen on mchlrhw</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 18 Apr 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://mchlrhw.github.io/blog/categories/grain-to-glass/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mchlrhw.github.io/blog/tags/m%C3%A4rzen/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,16 +19,6 @@
       <guid>https://mchlrhw.github.io/blog/brewlog/brew-0013/</guid>
       <description>I approached this brew with both excitement and trepidation owing to the fact that I have limited temperature control for fermentation, but really wanted to try brewing my first lager.
 Well, I say my first lager. My first lager was actually a pre-hopped LME kit beer that I brewed with my housemates in my second year of university. With no temperature control back then at all, and no concept of how a lager should be brewed or conditioned, we ended up with something that tasted &amp;ndash; in the words of our friend Sam &amp;ndash; like Fruit Pastels.</description>
-    </item>
-    
-    <item>
-      <title>Brew 0012</title>
-      <link>https://mchlrhw.github.io/blog/brewlog/brew-0012/</link>
-      <pubDate>Sat, 03 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://mchlrhw.github.io/blog/brewlog/brew-0012/</guid>
-      <description>This beer has a bit of a history. It&amp;rsquo;s originally from Home Brew Beer by Greg Hughes, which I first brewed as a partial extract batch way back in 2014. It went down really well with my wife, so I brewed it again when we were expecting our first child.
-It was really nice celebrating the birth (and her ability to drink again) with a cold refreshing glass of the pink stuff.</description>
     </item>
     
   </channel>

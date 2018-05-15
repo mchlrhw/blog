@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mchlrhw.github.io/blog/brewlog/brew-0013/</loc>
+    <lastmod>2018-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mchlrhw.github.io/blog/posts/first-post/</loc>
     <lastmod>2018-03-15T13:27:34+00:00</lastmod>
   </url>
@@ -14,7 +19,7 @@
   
   <url>
     <loc>https://mchlrhw.github.io/blog/brewlog/</loc>
-    <lastmod>2018-03-03T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -24,8 +29,30 @@
   </url>
   
   <url>
+    <loc>https://mchlrhw.github.io/blog/tags/decoction/</loc>
+    <lastmod>2018-04-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://mchlrhw.github.io/blog/categories/grain-to-glass/</loc>
-    <lastmod>2018-03-03T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mchlrhw.github.io/blog/tags/lager/</loc>
+    <lastmod>2018-04-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mchlrhw.github.io/blog/posts/mutually-recursive-prime-functions-1/</loc>
+  </url>
+  
+  <url>
+    <loc>https://mchlrhw.github.io/blog/tags/m%C3%A4rzen/</loc>
+    <lastmod>2018-04-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -36,14 +63,39 @@
   </url>
   
   <url>
+    <loc>https://mchlrhw.github.io/blog/tags/prime-numbers/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mchlrhw.github.io/blog/tags/python/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://mchlrhw.github.io/blog/tags/raspberry/</loc>
     <lastmod>2018-03-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://mchlrhw.github.io/blog/tags/recursion/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mchlrhw.github.io/blog/categories/software/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://mchlrhw.github.io/blog/tags/</loc>
-    <lastmod>2018-03-03T00:00:00+00:00</lastmod>
+    <lastmod>2018-04-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mchlrhw.github.io/blog/tags/toy-code/</loc>
     <priority>0</priority>
   </url>
   
@@ -60,8 +112,14 @@
   </url>
   
   <url>
+    <loc>https://mchlrhw.github.io/blog/tags/wyeast-2308/</loc>
+    <lastmod>2018-04-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://mchlrhw.github.io/blog/</loc>
-    <lastmod>2018-03-15T13:27:34+00:00</lastmod>
+    <lastmod>2018-04-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

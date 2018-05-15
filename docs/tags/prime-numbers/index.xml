@@ -1,24 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on mchlrhw</title>
-    <link>https://mchlrhw.github.io/blog/posts/</link>
-    <description>Recent content in Posts on mchlrhw</description>
+    <title>Prime Numbers on mchlrhw</title>
+    <link>https://mchlrhw.github.io/blog/tags/prime-numbers/</link>
+    <description>Recent content in Prime Numbers on mchlrhw</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Mar 2018 13:27:34 +0000</lastBuildDate>
     
-	<atom:link href="https://mchlrhw.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mchlrhw.github.io/blog/tags/prime-numbers/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>First Post</title>
-      <link>https://mchlrhw.github.io/blog/posts/first-post/</link>
-      <pubDate>Thu, 15 Mar 2018 13:27:34 +0000</pubDate>
-      
-      <guid>https://mchlrhw.github.io/blog/posts/first-post/</guid>
-      <description>Let&amp;rsquo;s give this blogging thing a go&amp;hellip;</description>
-    </item>
     
     <item>
       <title>Mutually Recursive Prime Functions</title>
