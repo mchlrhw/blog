@@ -1,6 +1,7 @@
 ---
 title: "Mutually Recursive Prime Functions"
 subtitle: "Part I - Primality"
+date: 2018-05-15
 publishdate: 2018-05-15
 type: post
 categories: ["software"]
