@@ -23,6 +23,15 @@ So, after the work we did in the previous post, we now have two functions that d
     </item>
     
     <item>
+      <title>Mutually Recursive Prime Functions</title>
+      <link>https://mchlrhw.github.io/blog/posts/mutually-recursive-prime-functions-1/</link>
+      <pubDate>Tue, 15 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://mchlrhw.github.io/blog/posts/mutually-recursive-prime-functions-1/</guid>
+      <description>OK, I admit it&amp;hellip; I love prime numbers. I don&amp;rsquo;t know why, but I know I&amp;rsquo;m not alone. There&amp;rsquo;s just something about them. Maybe it&amp;rsquo;s their indivisible nature &amp;ndash; their atomicity &amp;ndash; that seems so appealing. Maybe it&amp;rsquo;s the fact that they&amp;rsquo;re well understood, but nevertheless intangible &amp;ndash; there&amp;rsquo;s no equation for finding primes and most of our methods for finding them involve brute-force. Anyway, whatever it is, I just love them and I love writing code to generate them.</description>
+    </item>
+    
+    <item>
       <title>Brew 0013</title>
       <link>https://mchlrhw.github.io/blog/brewlog/brew-0013/</link>
       <pubDate>Wed, 18 Apr 2018 00:00:00 +0000</pubDate>
@@ -49,15 +58,6 @@ Well, I say my first lager. My first lager was actually a pre-hopped LME kit bee
       <guid>https://mchlrhw.github.io/blog/brewlog/brew-0012/</guid>
       <description>This beer has a bit of a history. It&amp;rsquo;s originally from Home Brew Beer by Greg Hughes, which I first brewed as a partial extract batch way back in 2014. It went down really well with my wife, so I brewed it again when we were expecting our first child.
 It was really nice celebrating the birth (and her ability to drink again) with a cold refreshing glass of the pink stuff.</description>
-    </item>
-    
-    <item>
-      <title>Mutually Recursive Prime Functions</title>
-      <link>https://mchlrhw.github.io/blog/posts/mutually-recursive-prime-functions-1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mchlrhw.github.io/blog/posts/mutually-recursive-prime-functions-1/</guid>
-      <description>OK, I admit it&amp;hellip; I love prime numbers. I don&amp;rsquo;t know why, but I know I&amp;rsquo;m not alone. There&amp;rsquo;s just something about them. Maybe it&amp;rsquo;s their indivisible nature &amp;ndash; their atomicity &amp;ndash; that seems so appealing. Maybe it&amp;rsquo;s the fact that they&amp;rsquo;re well understood, but nevertheless intangible &amp;ndash; there&amp;rsquo;s no equation for finding primes and most of our methods for finding them involve brute-force. Anyway, whatever it is, I just love them and I love writing code to generate them.</description>
     </item>
     
   </channel>

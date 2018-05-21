@@ -23,21 +23,21 @@ So, after the work we did in the previous post, we now have two functions that d
     </item>
     
     <item>
+      <title>Mutually Recursive Prime Functions</title>
+      <link>https://mchlrhw.github.io/blog/posts/mutually-recursive-prime-functions-1/</link>
+      <pubDate>Tue, 15 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://mchlrhw.github.io/blog/posts/mutually-recursive-prime-functions-1/</guid>
+      <description>OK, I admit it&amp;hellip; I love prime numbers. I don&amp;rsquo;t know why, but I know I&amp;rsquo;m not alone. There&amp;rsquo;s just something about them. Maybe it&amp;rsquo;s their indivisible nature &amp;ndash; their atomicity &amp;ndash; that seems so appealing. Maybe it&amp;rsquo;s the fact that they&amp;rsquo;re well understood, but nevertheless intangible &amp;ndash; there&amp;rsquo;s no equation for finding primes and most of our methods for finding them involve brute-force. Anyway, whatever it is, I just love them and I love writing code to generate them.</description>
+    </item>
+    
+    <item>
       <title>First Post</title>
       <link>https://mchlrhw.github.io/blog/posts/first-post/</link>
       <pubDate>Thu, 15 Mar 2018 13:27:34 +0000</pubDate>
       
       <guid>https://mchlrhw.github.io/blog/posts/first-post/</guid>
       <description>Let&amp;rsquo;s give this blogging thing a go&amp;hellip;</description>
-    </item>
-    
-    <item>
-      <title>Mutually Recursive Prime Functions</title>
-      <link>https://mchlrhw.github.io/blog/posts/mutually-recursive-prime-functions-1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mchlrhw.github.io/blog/posts/mutually-recursive-prime-functions-1/</guid>
-      <description>OK, I admit it&amp;hellip; I love prime numbers. I don&amp;rsquo;t know why, but I know I&amp;rsquo;m not alone. There&amp;rsquo;s just something about them. Maybe it&amp;rsquo;s their indivisible nature &amp;ndash; their atomicity &amp;ndash; that seems so appealing. Maybe it&amp;rsquo;s the fact that they&amp;rsquo;re well understood, but nevertheless intangible &amp;ndash; there&amp;rsquo;s no equation for finding primes and most of our methods for finding them involve brute-force. Anyway, whatever it is, I just love them and I love writing code to generate them.</description>
     </item>
     
   </channel>
