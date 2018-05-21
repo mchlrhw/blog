@@ -4,28 +4,32 @@
     <meta name="generator" content="Hugo 0.28-DEV" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Toy Code | mchlrhw</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="grain to glass, software, ">
+    <title>Mutually Recursive Prime Functions | mchlrhw</title>
+    <meta name="description" content="In the previous post I talked about what recursion is, what it takes for a number to be prime, and how we can apply recursion to the problem of primality testing and prime factorisation. In this post we&rsquo;ll take the next logical step: finding primes in a sea of integers.
+Hunting for Primes
+So, after the work we did in the previous post, we now have two functions that depend on each other to work at all; but we can do better.">
+    <meta name="keywords" content="prime numbers, python, recursion, toy code">
     
     
     
-    
-      <meta name="robots" content="noindex">
     
     
 
   <meta name="author" content="">
 
 
-    <meta property="og:title" content="Toy Code" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://mchlrhw.github.io/blog/tags/toy-code/" />
+    <meta property="og:title" content="Mutually Recursive Prime Functions" />
+<meta property="og:description" content="In the previous post I talked about what recursion is, what it takes for a number to be prime, and how we can apply recursion to the problem of primality testing and prime factorisation. In this post we&rsquo;ll take the next logical step: finding primes in a sea of integers.
+Hunting for Primes
+So, after the work we did in the previous post, we now have two functions that depend on each other to work at all; but we can do better." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mchlrhw.github.io/blog/posts/mutually-recursive-prime-functions-2/" />
 
 
 
-<meta property="og:updated_time" content="2018-05-21T00:00:00&#43;00:00"/>
+<meta property="article:published_time" content="2018-05-21T00:00:00&#43;00:00"/>
+
+<meta property="article:modified_time" content="2018-05-21T00:00:00&#43;00:00"/>
 
 
 
@@ -36,8 +40,11 @@
 
 
 
-    <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Toy Code"/>
-<meta name="twitter:description" content=""/>
+
+    <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Mutually Recursive Prime Functions"/>
+<meta name="twitter:description" content="In the previous post I talked about what recursion is, what it takes for a number to be prime, and how we can apply recursion to the problem of primality testing and prime factorisation. In this post we&rsquo;ll take the next logical step: finding primes in a sea of integers.
+Hunting for Primes
+So, after the work we did in the previous post, we now have two functions that depend on each other to work at all; but we can do better."/>
 
     
 
@@ -49,9 +56,7 @@
     
     
     
-      <link href="https://mchlrhw.github.io/blog/tags/toy-code/index.xml" rel="alternate" type="application/rss+xml" title="mchlrhw" />
-    
-    <link rel="canonical" href="https://mchlrhw.github.io/blog/tags/toy-code/">
+    <link rel="canonical" href="https://mchlrhw.github.io/blog/posts/mutually-recursive-prime-functions-2/">
     
     
     <link rel="icon" sizes="any" href="data:image/svg+xml,%3Csvg%20viewBox='0%200%2046%2045'%20xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EAfter%20Dark%3C/title%3E%3Cpath%20d='M.708%2045L23%20.416%2045.292%2045H.708zM35%2038L23%2019%2011%2038h24z'%20fill='%23000'/%3E%3C/svg%3E">
@@ -198,92 +203,96 @@ article [itemprop="description"] {
 
 </header>
     <main>
+  <article itemscope itemtype="http://schema.org/BlogPosting">
   <header>
-    <h1>Toy Code</h1>
-  </header>
-  
-    <article itemscope itemtype="http://schema.org/CreativeWork">
-  <header>
-    <h2 itemprop="name">
-      <a href="/blog/posts/mutually-recursive-prime-functions-2/">Mutually Recursive Prime Functions: Part II - Prime Generation</a>
-    </h2>
+    <h1 itemprop="headline">Mutually Recursive Prime Functions</h1>
     
-      <p class="muted"><svg style="margin-bottom:-3px" class="i-clock" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-  <circle cx="16" cy="16" r="14" />
-  <path d="M16 8 L16 16 20 20" />
-</svg>
-<span>2 minute read</span>
-<svg style="margin-bottom: -3px" class="i-edit" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-  <path d="M30 7 L25 2 5 22 3 29 10 27 Z M21 6 L26 11 Z M5 22 L10 27 Z" />
-</svg>
-
-  Published: <time datetime="2018-05-21T00:00:00&#43;00:00">21 May, 2018</time>
-
-</p>
+    <h2>Part II - Prime Generation</h2>
     
     
   </header>
-  
-  <div itemprop="description">
-    In the previous post I talked about what recursion is, what it takes for a number to be prime, and how we can apply recursion to the problem of primality testing and prime factorisation. In this post we&rsquo;ll take the next logical step: finding primes in a sea of integers.
-Hunting for Primes
-So, after the work we did in the previous post, we now have two functions that depend on each other to work at all; but we can do better.
+  <div itemprop="articleBody">
+    <p>In the previous post I talked about what recursion is, what it takes for a
+number to be prime, and how we can apply recursion to the problem of primality
+testing and prime factorisation. In this post we&rsquo;ll take the next logical step:
+finding primes in a sea of integers.</p>
+
+<p><strong>Hunting for Primes</strong></p>
+
+<p>So, after the work we did in the previous post, we now have two functions that
+depend on each other to work at all; but we can do better. What about if we add
+a third that generates prime numbers? So that instead of constantly having to
+ask &ldquo;is this prime?&rdquo; manually for every integer, we just say &ldquo;give me all the
+primes up to this limit&rdquo; and the function does it for us. That&rsquo;d be pretty
+sweet, no?</p>
+
+<p>Well I think it would, so here it is:</p>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #66d9ef">def</span> <span style="color: #a6e22e">primes_to</span><span style="color: #f8f8f2">(limit,</span> <span style="color: #f8f8f2">inclusive</span><span style="color: #f92672">=</span><span style="color: #66d9ef">False</span><span style="color: #f8f8f2">):</span>
+    <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">inclusive:</span>
+        <span style="color: #f8f8f2">limit</span> <span style="color: #f92672">+=</span> <span style="color: #ae81ff">1</span>
+    <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">i</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">range(</span><span style="color: #ae81ff">2</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">limit):</span>
+        <span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">is_prime(i):</span>
+            <span style="color: #66d9ef">yield</span> <span style="color: #f8f8f2">i</span>
+</pre></div>
+
+<p>We can then call it like this:</p>
+<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span></span><span style="color: #66d9ef">def</span> <span style="color: #a6e22e">main</span><span style="color: #f8f8f2">():</span>
+    <span style="color: #66d9ef">for</span> <span style="color: #f8f8f2">p</span> <span style="color: #f92672">in</span> <span style="color: #f8f8f2">primes_to(</span><span style="color: #ae81ff">50</span><span style="color: #f8f8f2">):</span>
+        <span style="color: #f8f8f2">print(p,</span> <span style="color: #f8f8f2">end</span><span style="color: #f92672">=</span><span style="color: #e6db74">&#39;, &#39;</span><span style="color: #f8f8f2">)</span>
+    <span style="color: #f8f8f2">print(</span><span style="color: #e6db74">&quot;...&quot;</span><span style="color: #f8f8f2">)</span>
+
+
+<span style="color: #66d9ef">if</span> <span style="color: #f8f8f2">__name__</span> <span style="color: #f92672">==</span> <span style="color: #e6db74">&quot;__main__&quot;</span><span style="color: #f8f8f2">:</span>
+    <span style="color: #f8f8f2">main()</span>
+</pre></div>
+
+<p>and get the output:</p>
+
+<pre><code>2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, ...
+</code></pre>
+
+<p>Nice! We could even take this a step further by converting <code>primes_to</code> into
+<code>primes_between</code> which would take two integers and give you all the primes
+between them. However, this introduces problems like validating user input
+(negative integers would unnecessarily complicate our algorithm) that we don&rsquo;t
+really want to worry about, so we&rsquo;ll leave it as <code>primes_to</code>. Feel free to come
+up with an implementation of your own for <code>primes_between</code>.</p>
+
+<p><strong>Post Script</strong></p>
+
+<p>Right, so to recap, we now have three functions relating to primes: one to test
+for primality; one to produce the prime factors of a number; and one to
+generate primes up to a limit. The first depends on the second; the second
+depends on the first and itself; and the third depends on the first.</p>
+
+<p>Nothing depends on the third though, that&rsquo;s a downer! It doesn&rsquo;t really feel
+like <code>primes_to</code> is really contributing to the mutual recursion, just feeding
+off it.</p>
+
+<p>Never fear, we&rsquo;ll fix that in the next instalment!</p>
+
   </div>
+  <footer>
+    <hr />
+    <p>
+  Published
+  using <span itemprop="wordCount">362</span> words
+  on
+  <time itemprop="datePublished" datetime="2018-05-21T00:00:00&#43;00:00">
+    21 May, 2018
+  </time>
   
-    <nav class="readmore"><a itemprop="url" href="/blog/posts/mutually-recursive-prime-functions-2/">Read More&nbsp;&raquo;</a></nav>
+    in <span itemprop="articleSection"><a href="/blog/categories/software/">software</a></span>
   
-  <meta itemprop="inLanguage" content="en-us">
-  <meta itemprop="datePublished" content="2018-05-21T00:00:00&#43;00:00">
-  <meta itemprop="dateModified" content="2018-05-21T00:00:00&#43;00:00">
   
-</article>
-
+    and tagged <a href="/blog/tags/prime-numbers/">prime numbers</a>, <a href="/blog/tags/python/">python</a>, <a href="/blog/tags/recursion/">recursion</a> and <a href="/blog/tags/toy-code/">toy code</a>
   
-    <article itemscope itemtype="http://schema.org/CreativeWork">
-  <header>
-    <h2 itemprop="name">
-      <a href="/blog/posts/mutually-recursive-prime-functions-1/">Mutually Recursive Prime Functions: Part I - Primality</a>
-    </h2>
-    
-      <p class="muted"><svg style="margin-bottom:-3px" class="i-clock" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-  <circle cx="16" cy="16" r="14" />
-  <path d="M16 8 L16 16 20 20" />
-</svg>
-<span>5 minute read</span>
-<svg style="margin-bottom: -3px" class="i-edit" viewBox="0 0 32 32" width="16" height="16" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6.25%">
-  <path d="M30 7 L25 2 5 22 3 29 10 27 Z M21 6 L26 11 Z M5 22 L10 27 Z" />
-</svg>
-
-  Published: <time datetime="2018-05-15T00:00:00&#43;00:00">15 May, 2018</time>
-
 </p>
-    
-    
-  </header>
-  
-  <div itemprop="description">
-    OK, I admit it&hellip; I love prime numbers. I don&rsquo;t know why, but I know I&rsquo;m not alone. There&rsquo;s just something about them. Maybe it&rsquo;s their indivisible nature &ndash; their atomicity &ndash; that seems so appealing. Maybe it&rsquo;s the fact that they&rsquo;re well understood, but nevertheless intangible &ndash; there&rsquo;s no equation for finding primes and most of our methods for finding them involve brute-force. Anyway, whatever it is, I just love them and I love writing code to generate them.
-  </div>
-  
-    <nav class="readmore"><a itemprop="url" href="/blog/posts/mutually-recursive-prime-functions-1/">Read More&nbsp;&raquo;</a></nav>
-  
-  <meta itemprop="inLanguage" content="en-us">
-  <meta itemprop="datePublished" content="2018-05-15T00:00:00&#43;00:00">
-  <meta itemprop="dateModified" content="0001-01-01T00:00:00&#43;00:00">
-  
-</article>
 
-  
+  </footer>
+  </article>
 </main>
     <footer>
-  <nav>
-  <p>
-    
-    <span>Page 1 of 1</span>
-    
-  </p>
-</nav>
-
   
   <p class="muted">
     <hr>
